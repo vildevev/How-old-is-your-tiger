@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="How_Old_Is_Your_Tiger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiger Years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qm4-wi-2go">
+                                <rect key="frame" x="131" y="28" width="112" height="35.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.25651016370863178" blue="0.18955517329915161" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How old is your tiger?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zp-DO-uPn">
+                                <rect key="frame" x="104" y="80" width="166" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter age..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dVk-Jr-MKj">
+                                <rect key="frame" x="16" y="125" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sq4-8r-2zT">
+                                <rect key="frame" x="163" y="170" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MmY-5r-YDP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In tiger years, your tiger is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ms1-3T-DVB">
+                                <rect key="frame" x="82" y="220" width="211" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmU-ZT-u8S">
+                                <rect key="frame" x="163" y="257" width="49" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.18151543766121592" blue="0.13186641174944214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tiger.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4kc-ko-gRM">
+                                <rect key="frame" x="16" y="267" width="343" height="380"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qm4-wi-2go" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="3i5-lS-Lpa"/>
+                            <constraint firstItem="3zp-DO-uPn" firstAttribute="top" secondItem="qm4-wi-2go" secondAttribute="bottom" constant="16.5" id="83b-Sn-FDE"/>
+                            <constraint firstItem="Sq4-8r-2zT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="147" id="94g-Br-zAM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3zp-DO-uPn" secondAttribute="trailing" constant="89" id="B2f-x5-bUp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Sq4-8r-2zT" secondAttribute="trailing" constant="147" id="DrL-GF-29a"/>
+                            <constraint firstItem="Ms1-3T-DVB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="66" id="JiO-j4-Ged"/>
+                            <constraint firstItem="qm4-wi-2go" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="115" id="JuP-ac-ZT9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ms1-3T-DVB" secondAttribute="trailing" constant="66" id="O52-qs-Kug"/>
+                            <constraint firstItem="dVk-Jr-MKj" firstAttribute="top" secondItem="3zp-DO-uPn" secondAttribute="bottom" constant="24" id="O76-vx-FcG"/>
+                            <constraint firstItem="bmU-ZT-u8S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="147" id="WuO-XZ-g7y"/>
+                            <constraint firstItem="3zp-DO-uPn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="88" id="Zra-NE-uDa"/>
+                            <constraint firstItem="qm4-wi-2go" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dJv-uI-SMn"/>
+                            <constraint firstItem="dVk-Jr-MKj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dkW-ew-NlK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bmU-ZT-u8S" secondAttribute="trailing" constant="147" id="eHl-IL-ZC7"/>
+                            <constraint firstItem="dVk-Jr-MKj" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="edT-Af-aBF"/>
+                            <constraint firstItem="Ms1-3T-DVB" firstAttribute="top" secondItem="Sq4-8r-2zT" secondAttribute="bottom" constant="20" id="jro-Nt-YQW"/>
+                            <constraint firstItem="bmU-ZT-u8S" firstAttribute="top" secondItem="Ms1-3T-DVB" secondAttribute="bottom" constant="16" id="ox1-4S-HhO"/>
+                            <constraint firstItem="Sq4-8r-2zT" firstAttribute="top" secondItem="dVk-Jr-MKj" secondAttribute="bottom" constant="15" id="s3e-4x-Aig"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qm4-wi-2go" secondAttribute="trailing" constant="116" id="y6m-0F-uEK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="bmU-ZT-u8S" id="mve-j6-izy"/>
+                        <outlet property="ageTextField" destination="dVk-Jr-MKj" id="Onh-j8-WCr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tiger.jpg" width="1600" height="1200"/>
+    </resources>
+</document>
